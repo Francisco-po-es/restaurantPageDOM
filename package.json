@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Francisco-po-es/restaurantPageDOM/issues"
   },
-  "homepage": "https://github.com/Francisco-po-es/restaurantPageDOM#readme"
+  "homepage": "https://github.com/Francisco-po-es/restaurantPageDOM#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.5",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  }
 }
