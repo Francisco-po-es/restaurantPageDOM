@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+header {
+    background-color: #5A2A1B;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #B5651D;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #975419;
+    transition: 0.25s;
+}
+
+button:active {
+    transform: scale(1.5);
+}
