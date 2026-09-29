@@ -1,6 +1,7 @@
+import dishSvg from './images/icon-dish.svg';
+
 export function loadAbout() {
   const content = document.getElementById('content');
-  content.textContent = '';
 
   const aboutContent = document.createElement('div');
   aboutContent.id = 'about-content';
@@ -9,7 +10,7 @@ export function loadAbout() {
   aboutTitle.id = 'about-title';
 
   const icon = document.createElement('img');
-  icon.src = 'images/icon-dish.svg';
+  icon.src = dishSvg
   icon.alt = 'icon-dish';
 
   const span = document.createElement('span');

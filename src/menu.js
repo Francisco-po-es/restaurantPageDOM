@@ -1,27 +1,30 @@
+import cevicheImg from './images/ceviche.jpg';
+import lomoSaltadoImg from './images/lomo-saltado.jpg';
+import ajiDeGallinaImg from './images/aji-de-gallina.jpg';
+
 const dishes = [
   {
     name: 'Ceviche',
     desc: 'Fresh fish marinated in lime juice with red onion and sweet potato.',
     price: 's/. 25.00',
-    img: 'images/ceviche.jpg'
+    img: cevicheImg
   },
   {
     name: 'Lomo Saltado',
     desc: 'Stir-fried beef with onions and tomatoes, served with French fries and white rice.',
     price: 's/. 30.00',
-    img: 'images/lomo-saltado.jpg'
+    img: lomoSaltadoImg
   },
   {
     name: 'Ají de Gallina',
     desc: 'Creamy yellow chili pepper sauce with shredded chicken, served with white rice.',
     price: 's/. 27.00',
-    img: 'images/aji-de-gallina.jpg'
+    img: ajiDeGallinaImg
   }
 ];
 
 export function loadMenu() {
   const content = document.getElementById('content');
-  content.textContent = '';
 
   const menuContent = document.createElement('div');
   menuContent.id = 'menu-content';
