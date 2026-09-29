@@ -20,15 +20,21 @@ export default {
   ],
   module: {
     rules: [
+      //css
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-      // webpack.config.js
+      //images in html files
      {
      test: /\.html$/i,
      use: ["html-loader"],
-     }
+     },
+     //images in javascript files
+     {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      }
     ],
   },
 };
