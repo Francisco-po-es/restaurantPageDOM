@@ -10,7 +10,17 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6rem 1fr;
+    grid-template-areas: 
+        'header'
+        'content-div';
+}
+
 header {
+    grid-area: header;
     background-color: #5A2A1B;
     padding: 2rem;
 }
@@ -39,7 +49,13 @@ button:active {
     transform: scale(1.5);
 }
 
+#content {
+    grid-area: content-div;
+    display: grid;
+}
+
 #home-content {
+    height: 100%;
     background-color: #8C3B1B;
     padding: 10rem 2rem;
 }
@@ -56,9 +72,10 @@ button:active {
 }
 
 #menu-cards {
+    height: 100%;
     background-color: #D9A05B;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .dish {
@@ -66,10 +83,8 @@ button:active {
     margin: 1rem;
     padding: 1rem;
     justify-self: center;
-    width: auto;
-    height: 500px;
     display: grid;
-    grid-template-rows: 70% 10% 12.5% 7.5%;
+    grid-template-rows: 1fr auto auto auto;
     grid-template-areas: 
         'img'
         'title'
@@ -88,22 +103,26 @@ button:active {
 .dish h2 {
     justify-self: center;
     align-self: center;
+    margin: 1rem auto;
 }
 
 .dish p {
     border-top: 1px black solid;
     border-bottom: 1px black solid;
     align-self: center;
+    font-size: clamp(1rem, 1vw, 4rem);;
 }
 
 .dish span {
     align-self: center;
     justify-self: end;
+    margin-top: 1rem;
 }
 
 #about-content {
+    height: 100%;
     background-color: #8C3B1B;
-    padding: 10rem 2rem;
+    padding: 5rem 2rem;
 }
 
 #about-border {
